@@ -1,0 +1,24 @@
+#jumbo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 21rem;
+
+    .container {
+        position: relative;
+        height: 100%;
+
+        div {
+            color: white;
+            background-color: var(--blue-color);
+            display: inline-block;
+            padding: 0.75rem 1rem;
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+
+            h3 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

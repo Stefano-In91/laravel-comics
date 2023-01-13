@@ -1,0 +1,26 @@
+.card-box {
+    background-color: var(--primary-color);
+    padding: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .card {
+        max-width: calc(100% / 12 * 2);
+        padding: 1rem;
+
+        img {
+            object-fit: cover;
+            height: calc(var(--container-max-width) / 12 * 2 - 2rem);
+            width: calc(var(--container-max-width) / 12 * 2 - 2rem);
+            object-position: top;
+        }
+        h4 {
+            padding: 0.75rem 0;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
