@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .card {
+    .card_footer {
         display: flex;
         align-items: center;
         color: white;
@@ -45,13 +45,16 @@
 
         .list {
             margin-right: 1rem;
+            ul {
+                padding-left: 0;
+                li a {
+                    color: gray;
+                }
+            }
 
             h3 {
                 margin: 0.5rem 0;
                 text-transform: uppercase;
-            }
-            li a {
-                color: gray;
             }
         }
     }

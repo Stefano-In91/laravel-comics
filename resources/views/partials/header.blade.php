@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    <img src="" alt="Logo" />
+    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo" />
     <ul>
       <li>
         <a href="#">Characters</a>
