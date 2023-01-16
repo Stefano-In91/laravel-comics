@@ -10,9 +10,10 @@
   <section id="carousel" class="card-box">
 
     <div class="container">
-      @foreach ($comics as $comic)
+      @foreach ($comics as $index => $comic)
         <div class="carousel_card">
-          <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}" />
+          <a href="{{ route('show', $index) }}"><img src="{{ $comic['thumb'] }}"
+              alt="{{ $comic['series'] }}" /></a>
           <h4>{{ $comic['title'] }}</h4>
         </div>
       @endforeach

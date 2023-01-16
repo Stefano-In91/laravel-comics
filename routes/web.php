@@ -17,8 +17,16 @@ Route::get('/', function () {
     $comics = config('comics');
 
     return view('homepage', compact('comics'));
-})->name("home");
+})->name("homepage");
 
-Route::get('/about-us', function() {
-    return view('about');
-})->name("about");
+Route::get('/comic/{index}', function($index) {
+    $comics = config('comics');
+
+    if($index > count($comics) - 1) {
+        abort(404);
+    }
+
+    $comic = $comics[$index];
+
+    return view('show', compact('comic'));
+})->name("show")->where('index', '[0-9]+');
